@@ -1,0 +1,135 @@
+.task_list {
+  max-height: 100%;
+  flex: 1 0 25%;
+  padding: 0 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.task_list_inner {
+  background: #EBECF0;
+  border-radius: 10px;
+  padding: 12px 12px 8px 12px;
+  max-height: 100%;
+  overflow: hidden;
+}
+
+.task_list_scrollable {
+  overflow: auto;
+  max-height: 100%;
+  padding-right: 12px;
+  margin-right: -12px;
+}
+
+.task_list_scrollable::-webkit-scrollbar {
+  width: 12px;
+}
+
+.task_list_scrollable::-webkit-scrollbar-track {
+  background: #FFFFFF;
+}
+
+.task_list_scrollable::-webkit-scrollbar-thumb {
+  width: 12px;
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+
+.list_main_heading {
+  margin-bottom: 15px;
+}
+
+.button_add {
+  border: 0px;
+  height: 28px;
+  background: #EBECF0;
+  color: #5E6C84;
+  cursor: pointer;
+  margin-top: 17px;
+}
+
+.button_add:hover {
+  color: #0067A3;
+  height: 28px;
+  background: #FFFFFF;
+  border-radius: 5px;
+}
+
+.button_submit {
+  background: #0079BF;
+  border-radius: 5px;
+  border: 0;
+  color: #FFFFFF;
+  cursor: pointer;
+  width: 102px;
+  height: 29px;
+  margin-top: 12px;
+}
+
+.input_Task {
+  background: #FFFFFF;
+  border-radius: 5px;
+  border: 0;
+  display: block;
+  line-height: 35px;
+  width: 100%;
+  padding: 0 8px;
+}
+
+.task_link + .input_Task {
+  margin-top: 15px;
+}
+
+.button_cancel {
+  border: 0px;
+  height: 28px;
+  background: #EBECF0;
+  color: #5E6C84;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+.button_cancel:hover {
+  color: #0067A3;
+  height: 28px;
+  border-radius: 5px;
+}
+
+.select_task {
+  padding-left: 8px;
+  display: block;
+  width: 100%;
+  border-radius: 5px;
+  margin-top: 15px;
+  height: 35px;
+  border: 0;
+  font-family: "Roboto";
+  appearance: none;
+  background: url("./Vector.svg") no-repeat right #FFFFFF;
+  background-position: top 50% right 8px;
+  outline: none;
+  cursor: pointer;
+}
+
+.task_link {
+  background: #FFFFFF;
+  border-radius: 5px;
+  padding: 8px 7px;
+  display: block;
+  text-decoration: none;
+  color: #000000;
+}
+
+.task_link + .task_link {
+  margin-top: 15px;
+}
+
+@media (max-width: 500px) {
+  .task_list {
+    flex: 0 0 0%;
+  }
+  
+  .task_list + .task_list {
+    padding-top: 50px;
+  }
+}

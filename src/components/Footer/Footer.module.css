@@ -1,0 +1,48 @@
+.footer {
+  background-color: #0067A3;
+  width: 100%;
+  height: 55px;
+  margin: 0 auto;
+}
+
+.footer_info {
+  display: flex;
+  justify-content: space-between;
+  padding-top: 17px;
+}
+
+.footer_content {
+  display: flex;
+}
+
+.footer_activ {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.footer_finish {
+  padding-left: 36px;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+.footer_name_year {
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #FFFFFF;
+}
+
+@media (max-width: 500px) {
+  .footer {
+    display: none;
+    height: 0px;
+  }
+}
